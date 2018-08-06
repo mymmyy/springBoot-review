@@ -1,0 +1,16 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /hello
+
+person:
+  last-name: mym_${random.uuid}
+  age: 18
+  birth: 2018/8/8
+  dog:
+    gender: 1
+    age: ${person.age:100}
+  maps:
+    a: A
+    b: B
+  lists: 1,2,3
